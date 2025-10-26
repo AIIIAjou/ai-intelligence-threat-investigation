@@ -1,0 +1,98 @@
+{
+  "scenarios": [
+    {
+      "id": "osint-investigation-1",
+      "name": "Basic OSINT Investigation",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I need to conduct an OSINT investigation on a potential threat actor."
+        },
+        {
+          "role": "assistant",
+          "content": "I'll help you conduct an OSINT investigation. To begin, I need some basic information about the target. Could you provide:\n\n1. Target name or identifier\n2. Type of investigation (person, organization, domain, etc.)\n3. Any initial intelligence you already have\n\nI'll coordinate with our specialized agents to gather comprehensive intelligence."
+        },
+        {
+          "role": "user",
+          "content": "The target is a user going by the handle 'CyberPhantom2024'. We suspect potential malicious activity."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood. I'm initiating a comprehensive investigation on target 'CyberPhantom2024'. I'll deploy our specialized agents:\n\n**Investigation Plan:**\n1. **Create Variations Agent** - Generate search query variations\n2. **SNS Search Agent** - Scan social media platforms\n3. **Web Search Agent** - Conduct open web intelligence gathering\n4. **Image Process Agent** - Analyze any associated images\n\nLet me start by creating optimized search queries..."
+        },
+        {
+          "role": "assistant",
+          "content": "**Query Variations Generated:**\n- \"CyberPhantom2024\"\n- \"CyberPhantom2024 profile\"\n- \"CyberPhantom2024 social media\"\n- \"CyberPhantom 2024\"\n- \"@CyberPhantom2024\"\n\nProceeding with SNS search across platforms..."
+        },
+        {
+          "role": "assistant",
+          "content": "**SNS Search Results:**\n- **Platforms searched:** Twitter/X, LinkedIn, Facebook, Instagram, GitHub\n- **Profiles found:** 8 matches\n- **Posts analyzed:** 237\n- **Key patterns:**\n  - Active on cybersecurity forums\n  - Frequent discussions about penetration testing\n  - Mentions of security conferences\n  - Connection to legitimate security researchers\n\nContinuing with web search..."
+        },
+        {
+          "role": "assistant",
+          "content": "**Web Search Completed:**\n- **Sources found:** 45\n- **Relevance score:** 0.78/1.00\n- **Key findings:**\n  - Mentioned in security blog posts\n  - Participant in CTF competitions\n  - Active on security disclosure forums\n  - No malicious indicators found in public records\n\n**Preliminary Assessment:**\nTarget appears to be a legitimate security researcher. No immediate threat indicators detected. Would you like me to generate a comprehensive report?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, please generate the full intelligence report."
+        },
+        {
+          "role": "assistant",
+          "content": "DISPLAY_INTELLIGENCE_REPORT"
+        }
+      ],
+      "context": {
+        "target_name": "CyberPhantom2024",
+        "target_id": "TARGET-3847",
+        "investigation_type": "PERSON",
+        "threat_level": "LOW",
+        "classification": "CONFIDENTIAL",
+        "report_id": "INTEL-742891"
+      }
+    },
+    {
+      "id": "domain-investigation",
+      "name": "Domain Threat Analysis",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Analyze the domain suspicious-tech-deals.com for potential phishing activity"
+        },
+        {
+          "role": "assistant",
+          "content": "Initiating domain threat analysis for **suspicious-tech-deals.com**\n\nDeploying investigation agents:\n- Web Search: Domain registration and historical data\n- SNS Search: Social media mentions and reports\n- Image Process: Screenshot analysis of the website\n\nStarting investigation..."
+        },
+        {
+          "role": "assistant",
+          "content": "**Domain Intelligence Gathered:**\n\n**WHOIS Data:**\n- Registration: 15 days ago\n- Registrar: Privacy-protected\n- Server location: Eastern Europe\n\n**Web Presence:**\n- Very recent domain creation\n- Limited web history\n- No legitimate business records found\n- SSL certificate: Self-signed\n\n**Social Media Analysis:**\n- 23 reports on Twitter about suspicious emails\n- Multiple phishing warnings from users\n- Flagged by 3 security researchers\n\n**Visual Analysis:**\n- Website design mimics legitimate tech retailers\n- Payment forms collect extensive personal data\n- No valid contact information\n\n**THREAT ASSESSMENT: HIGH**\nThis domain exhibits strong indicators of phishing activity. Recommend immediate blacklisting."
+        }
+      ],
+      "context": {
+        "target_name": "suspicious-tech-deals.com",
+        "target_id": "TARGET-9182",
+        "investigation_type": "DOMAIN",
+        "threat_level": "HIGH",
+        "classification": "UNCLASSIFIED",
+        "report_id": "INTEL-892743"
+      }
+    },
+    {
+      "id": "simple-query",
+      "name": "Quick Information Gathering",
+      "messages": [
+        {
+          "role": "user",
+          "content": "What OSINT tools can help with social media investigation?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here are key OSINT tools for social media investigation:\n\n**Username Search:**\n- Sherlock - Search usernames across social networks\n- WhatsMyName - Username enumeration\n- Namechk - Username availability checker\n\n**Platform-Specific:**\n- Twint - Twitter intelligence tool\n- InstaLoader - Instagram data gathering\n- LinkedIn Helper - Profile extraction\n\n**Analysis Tools:**\n- Maltego - Relationship mapping\n- Social-Analyzer - Cross-platform analysis\n- OSINT Framework - Comprehensive tool directory\n\n**Best Practices:**\n1. Always respect privacy laws and ToS\n2. Maintain operational security\n3. Document all findings with timestamps\n4. Verify information from multiple sources\n5. Use VPN/proxy when appropriate\n\nWould you like detailed guidance on any specific tool?"
+        }
+      ],
+      "context": {
+        "investigation_type": "GENERAL",
+        "classification": "UNCLASSIFIED"
+      }
+    }
+  ]
+}
